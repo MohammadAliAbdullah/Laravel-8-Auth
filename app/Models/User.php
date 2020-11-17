@@ -58,4 +58,26 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    // Relation with users and user_roles ...
+    public function user_role()
+    {
+        return $this->hasOne('App\Models\UserRole');
+    }
+
+    // Relation with users, user_roles and roles ...
+
+    public function roles()
+    {
+        return $this->belongsToMany('App\Models\Role', 'user_roles', 'user_id', 'role_id')->withPivot('role_id');;
+    }
+    // Eloquent: Relationships ORM => One To One ... 
+    public function phones()
+    {
+        return $this->hasOne(phone::class);
+    }
+    public function post()
+    {
+        return $this->hasMany(Post::class);
+    }
 }

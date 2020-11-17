@@ -1,0 +1,7 @@
+add products 
+
+1. category <-
+2. brands   <-
+3. attributes ->
+4. colors <-
+5. photos ->

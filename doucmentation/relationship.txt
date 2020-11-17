@@ -1,0 +1,11 @@
+https://www.youtube.com/watch?v=m0IsbkfONL4&list=PL1TrjkMQ8UbVyIT0cDX-54gN5tunWZvaI
+
+-------------------------------
+One To One (ok)
+One To Many (ok)
+Many To Many
+Has One Through
+Has Many Through
+One To One (Polymorphic)
+One To Many (Polymorphic)
+Many To Many (Polymorphic)
