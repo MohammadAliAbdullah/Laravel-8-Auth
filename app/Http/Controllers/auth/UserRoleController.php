@@ -24,8 +24,8 @@ class UserRoleController extends Controller
     public function index()
     {
         $roles = Role::All();
-        $users = User:: all();
-        return view('auth.users.showCreateUserRole')->with('roles', $roles)->with('users',$users);
+        $users = User::all();
+        return view('auth.users.showCreateUserRole')->with('roles', $roles)->with('users', $users);
     }
 
     /**
@@ -107,5 +107,8 @@ class UserRoleController extends Controller
     {
         //
     }
-
+    public function usen()
+    {
+        return 10;
+    }
 }
